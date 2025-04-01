@@ -1,4 +1,5 @@
-Watch working project video - https://github.com/user-attachments/assets/cf284062-5c6e-4503-b89e-685246a02215
+**Watch working project video** - https://github.com/user-attachments/assets/5fbdb915-4491-44cd-af50-2a8a75403550
+
 **BotBuddy** 🤖
 
 BotBuddy is an AI-powered chatbot application built using Kotlin in Android Studio. It utilizes the Gemini API to deliver intelligent and interactive conversations. The chatbot can remember previous interactions, ensuring a seamless user experience. Additionally, it provides an option to copy chat responses for easy sharing.
