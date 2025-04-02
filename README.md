@@ -1,4 +1,4 @@
-**Watch working project video** - https://github.com/user-attachments/assets/5fbdb915-4491-44cd-af50-2a8a75403550
+**Watch working project video** - https://github.com/user-attachments/assets/8cbf946b-d91d-4d80-8ec1-df8f2c573d40
 
 **BotBuddy** 🤖
 
