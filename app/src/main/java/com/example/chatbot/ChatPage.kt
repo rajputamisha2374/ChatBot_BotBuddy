@@ -42,10 +42,6 @@ import com.example.chatbot.ui.theme.ColorUserText
 import com.example.chatbot.ui.theme.ColorModelText
 
 
-//import np.com.bimalkafle.ChatBot.ui.theme.ColorModelMessage
-//import np.com.bimalkafle.ChatBot.ui.theme.ColorUserMessage
-//import np.com.bimalkafle.ChatBot.ui.theme.Purple80
-
 
 @Composable
 fun ChatPage(modifier: Modifier = Modifier,viewModel: ChatViewModel) {
@@ -78,9 +74,12 @@ fun MessageList(modifier: Modifier = Modifier,messageList: List<MessageModel>) {
                 modifier = Modifier.size(60.dp),
                 painter = painterResource(id = R.drawable.baseline_question_answer_24),
                 contentDescription = "Icon",
+                tint = Color(0xFF797979)
 
                 )
-                Text(text = "Ask me anything" , fontSize = 22.sp)
+                Text(text = "How can I help you?" , fontSize = 22.sp,
+                    color= Color(0xFF797979)
+                )
         }
     }else{
         LazyColumn(modifier = modifier,
@@ -167,7 +166,14 @@ fun MessageInput(onMessageSend : (String)->Unit) {
                 .weight(1f)
 
         )
-        IconButton(onClick = {
+        Box(
+            modifier = Modifier
+                .size(50.dp) // Circular size
+                .clip(RoundedCornerShape(50.dp)) // Makes it circular
+                .background(Color(0xFF705834)), // Brownish background
+            contentAlignment = Alignment.Center
+        )
+        {IconButton(onClick = {
             if(message.isNotEmpty()){
                 onMessageSend(message)
                 message = ""
@@ -176,8 +182,10 @@ fun MessageInput(onMessageSend : (String)->Unit) {
         }) {
             Icon(
                 imageVector = Icons.Default.Send,
-                contentDescription = "Send")
-        }
+                contentDescription = "Send",
+                tint = Color(0xFFE6E0CC)
+                )
+        }}
     }
 }
 
@@ -191,7 +199,8 @@ fun AppHeader() {
         Text(modifier = Modifier.padding(16.dp),
             text = "BotBuddy",
             color = Color(0xFFE6E0CC),
-            fontSize = 27.sp
+            fontSize = 27.sp ,
+            fontWeight = FontWeight.Bold
         )
     }
 }
