@@ -8,7 +8,7 @@ BotBuddy is an AI-powered chatbot application built using Kotlin in Android Stud
 
 **AI-Powered Conversations** – Uses the Gemini API for smart and dynamic responses.
 
-**Chat History Memory** – Remembers previous interactions for a personalized experience.
+**Chat History Memory** – Retains the information provided during ongoing conversation for personalized experience..
 
 **Copy Chat Option** – Easily copy responses with a single tap.
 
